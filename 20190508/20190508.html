@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20190508</title>
+</head>
+<body>
+    <h1>Data().getDay()今天星期幾</h1>
+    <p id="num"></p>
+    <p id="msg"></p>
+    <button onclick="get_Week()">The time is now!!!</button>
+    <button onclick="get_week2()">Test</button>
+    <script>
+        function get_Week(){
+            var data_week = new Date().getDay();
+            document.getElementById("numWeek").innerHTML = "Today is "+ data_week;
+            switch(data_week){
+                case 3:document.getElementById("msg").innerHTML = "今天星期三 ";break;
+                case 4:document.getElementById("msg").innerHTML = "今天星期四 ";break;
+                default: document.getElementById("msg").innerHTML = "今天不是星期三或星期四 ";
+            }
+        }
+    </script>
+</body>
+</html>

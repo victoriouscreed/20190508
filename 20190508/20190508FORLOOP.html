@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <H1>Java Script For Loop</H1>
+    <p id="msg"></p>
+    <script>
+        var strtext = "";
+        var i;
+        var sum2 = 0;
+        var sum = 101;
+        for(i=1;i<=100;i++){
+            sum -= 1;
+            sum2 += sum;
+            strtext += "Loop: " + i + ", Sum: "+ sum2 + "<br>";
+        }
+        document.getElementById("msg").innerHTML = strtext;
+    </script>
+</body>
+</html>

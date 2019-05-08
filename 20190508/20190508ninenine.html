@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>99</title>
+</head>
+<body>
+<H1>Java Script For Loop</H1>
+<p id="msg"></p>
+<script>
+    var strtext = "";
+    var i;
+    var n=1;
+    for(i=1;i<=9;i++){
+        for(n=1;n<=9;n++){
+            strtext += i*n + "|";
+        }
+        strtext += "<br>";
+    }
+    document.getElementById("msg").innerHTML = strtext;
+</script>
+
+</body>
+</html>
